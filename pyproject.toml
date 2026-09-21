@@ -1,0 +1,41 @@
+[project]
+name = "light-infinity-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agno>=2.7.3",
+    "alembic>=1.18.5",
+    "fastapi>=0.139.1",
+    "pandas>=3.0.3",
+    "plotly>=6.9.0",
+    "psycopg2-binary>=2.9.12",
+    "python-dotenv>=1.2.2",
+    "reportlab>=5.0.1",
+    "requests>=2.34.2",
+    "sqlalchemy>=2.0.51",
+    "streamlit>=1.59.2",
+    "uvicorn>=0.51.0",
+]
+
+[tool.ruff]
+src = ["."]
+line-length = 120
+
+[tool.ruff.lint]
+# Selectăm regulile de bază (E, F) și sortarea importurilor (I)
+select = ["E", "F", "I"]
+# IGNORĂRI DE ENTERPRISE: excepții oarbe (BLE001), variabile simple (E741) și linii lungi de text UI (E501)
+ignore = ["BLE001", "E741", "E501"]
+
+[tool.ruff.lint.isort]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+known-first-party = ["app"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+[tool.pytest.ini_options]
+addopts = "-p no:warnings"

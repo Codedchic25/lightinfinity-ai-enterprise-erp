@@ -1,0 +1,25 @@
+# 🧪 Configurație Oficială Promptfoo Enterprise cu GROQ
+prompts:
+  - "Esti un asistent expert in chimie si polimeri pentru brandul Light Infinity AI. Genereaza o reteta comerciala optimizata pentru o lumanare parfumata premium folosind criteriile: ceara de tip {{ceara}} si aroma {{parfum}}. Limiteaza raspunsul la pasii tehnici de turnare."
+
+providers:
+  - id: groq:openai/gpt-oss-20b
+    config:
+      temperature: 0.3
+
+tests:
+  - vars:
+      ceara: "Ceara de Soia Premium"
+      parfum: "Sandal Wood Enterprise"
+    assert:
+      - type: contains
+        value: "ceara"
+      - type: contains
+        value: "parfum"
+
+  - vars:
+      ceara: "Ceara de Albine Naturala"
+      parfum: "Lavanda Frantuzeasca"
+    assert:
+      - type: contains
+        value: "temperatura"

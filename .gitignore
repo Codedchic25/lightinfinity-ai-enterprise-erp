@@ -1,0 +1,37 @@
+# Python-generated files
+**/__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+env/
+ENV/
+
+# Environment variables and Secrets (CRITICAL)
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Tools and Caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Local SQLite databases
+*.db
+# Generated invoices
+autogen_facturi/
