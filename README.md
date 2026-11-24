@@ -9,8 +9,6 @@ The project is designed as a **portfolio-grade enterprise application**, with a 
 
 ### 🌐 Live Production Access (Recruiter & Auditor Invitation)
 
-🌐 Live Production Access (Recruiter & Auditor Invitation)
-
 👉 https://lightinfinity-ai-enterprise-erp-775d5ib7xvfytyxelqbmbr.streamlit.app/
 • Demo Email: admin@lightinfinity.ai
 • Demo Password: light2026
