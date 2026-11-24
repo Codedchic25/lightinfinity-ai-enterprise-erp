@@ -6,6 +6,20 @@ The application combines a relational database architecture, modular Python serv
 
 The project is designed as a **portfolio-grade enterprise application**, with a clear separation between database models, infrastructure, business modules, analytics, storefront operations, and application presentation.
 
+
+### 🌐 Live Production Access (Recruiter & Auditor Invitation)
+
+🌐 Live Production Access (Recruiter & Auditor Invitation)
+
+👉 https://lightinfinity-ai-enterprise-erp-775d5ib7xvfytyxelqbmbr.streamlit.app/
+• Demo Email: admin@lightinfinity.ai
+• Demo Password: light2026
+
+- **Demo Email:** `admin@lightinfinity.ai`
+- **Demo Password:** `light2026`
+
+> **Security Note:** Passwords are salted with the normalized user email and verified against SHA-256 cryptographic hashes stored in the relational database layer.
+
 ---
 
 ## 🏗️ Architecture Overview
